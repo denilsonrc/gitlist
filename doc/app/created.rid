@@ -1,0 +1,7 @@
+Mon, 22 Jul 2019 00:34:41 -0300
+README.rdoc	Mon, 22 Jul 2019 00:30:39 -0300
+app/controllers/application_controller.rb	Mon, 22 Jul 2019 00:16:29 -0300
+app/controllers/show_info_controller.rb	Mon, 22 Jul 2019 00:13:44 -0300
+app/helpers/application_helper.rb	Sun, 21 Jul 2019 16:44:35 -0300
+app/helpers/show_info_helper.rb	Sun, 21 Jul 2019 17:58:47 -0300
+app/models/user.rb	Mon, 22 Jul 2019 00:15:58 -0300

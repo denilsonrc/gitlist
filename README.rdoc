@@ -1,0 +1,16 @@
+== README
+
+Passo-a-passo para rodar a aplicação:
+
+* Instalar Ruby 2.3.x
+
+* Executar o comando Bundle na raiz do projeto
+
+* Criar o banco e inserir as migrações com o comando rake db:migrate
+
+* Subir a aplicação com o comando rails server
+
+* Criar um usuário dentro da aplicação
+
+Assim que todos os passos forem feitos, é possivel utilizar a aplicação completamente.
+

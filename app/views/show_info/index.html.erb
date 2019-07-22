@@ -1,0 +1,21 @@
+<%- @repos.each do |repositorio| %>
+    <h3><%= repositorio[:nome_repo] %></h3><%= repositorio[:descricao] %>
+    <hr>
+    <table>
+        <tr>
+            <th>Usuário</th>
+            <th>Email</th>
+            <th>data</th>
+            <th>commit</th>
+        </tr>
+        <%- repositorio[:commits].each do |commit| %>
+            <tr>
+                <td><%= commit[:nome_author] %></td>
+                <td><%= commit[:email_author] %></td>
+                <td><%= commit[:data_commit] %></td>
+                <td><%= commit[:commit_message] %></td>
+            </tr>
+        <%- end %>
+    </table>
+<% end %>
+
