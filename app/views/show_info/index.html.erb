@@ -1,5 +1,5 @@
-<%- @repos.each do |repositorio| %>
-    <h3><%= repositorio[:nome_repo] %></h3><%= repositorio[:descricao] %>
+<%- @repositories.each do |repositorio| %>
+    <h3><%= repositorio.full_name %></h3><%= repositorio.description %>
     <hr>
     <table>
         <tr>
@@ -7,13 +7,15 @@
             <th>Email</th>
             <th>data</th>
             <th>commit</th>
+            <th>SHA</th>
         </tr>
-        <%- repositorio[:commits].each do |commit| %>
+        <%- repositorio.commits.order('date DESC').limit(10).each do |commit| %>
             <tr>
-                <td><%= commit[:nome_author] %></td>
-                <td><%= commit[:email_author] %></td>
-                <td><%= commit[:data_commit] %></td>
-                <td><%= commit[:commit_message] %></td>
+                <td><%= commit.author %></td>
+                <td><%= commit.email %></td>
+                <td><%= commit.date %></td>
+                <td><%= commit.message %></td>
+                <td><%= commit.sha %></td>
             </tr>
         <%- end %>
     </table>
